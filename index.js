@@ -32,3 +32,19 @@ console.log(outraSoma(12,15))
 
 const incentivarQuester = nomeQuester => console.log("Parabéns "+nomeQuester+", Você chegou ao módulo de JS intermediário")
 incentivarQuester("Ted") //maneira com menos código 
+
+
+//Higher order functions 
+function multiplicar(multiplicador ) {
+    return function (numero){
+        return  numero * multiplicador
+    }    
+}
+
+let dobrar = multiplicar(2)
+let triplicar = multiplicar(3)
+let quadruplicar = multiplicar(4)
+
+console.log(dobrar(6))
+console.log(triplicar(6))
+console.log(quadruplicar(6))
