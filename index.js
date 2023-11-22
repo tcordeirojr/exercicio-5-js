@@ -62,3 +62,10 @@ function marcarRadio(genero){
         radioFeminino.checked = true; 
     }
 }
+
+//eventos de DOM
+document
+.querySelector("select[name=estados]")
+.addEventListener('change',function(event){
+    console.log(event.target.value)
+});
