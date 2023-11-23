@@ -2,11 +2,15 @@
     width: 100px;
     height: 100px;
 }
+.quadrado2{
+    width: 100px;
+    height: 100px;
+}
 .azul{
     background-color:blue;
 }
-.vermelho{
-    background-color: red;
+.preto{
+    background-color:black;
 }
 .amarelo{
     background-color: yellow;

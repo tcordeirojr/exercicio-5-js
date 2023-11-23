@@ -106,14 +106,38 @@
 //     quadradoVermelho.classList.add('verde');
 // }
 
-const numeral = [65, 44, 12, 4];
+// const numeral = [65, 44, 12, 4];
 
-numeral.forEach((item) => {
-    console.log(item *10);
-});
+// numeral.forEach((item) => {
+//     console.log(item *10);
+// });
     
-const numeros = [10, 15, 20, 25];
+// const numeros = [10, 15, 20, 25];
 
-numeros.forEach((index) => {
-    console.log(index /10)
-})
+// numeros.forEach((index) => {
+//     console.log(index /10)
+// });
+
+const quadrado = document.querySelector('.quadrado');
+    quadrado.addEventListener('click',trocarCor);
+
+    function trocarCor() {
+        quadrado.classList.add('azul');
+        quadrado.classList.toggle('preto');
+        console.log(trocarCor);
+    }
+
+    const quadrado2 = document.querySelector('.quadrado2');
+        quadrado2.addEventListener('click', () =>{
+            const classeVerde = quadrado2.classList.contains('verde');
+            if (classeVerde) {
+                quadrado2.classList.remove('verde');
+            }else{
+                quadrado2.classList.add('verde');
+            }
+            console.log(quadrado2);
+        });
+    
+        
+    
+    
