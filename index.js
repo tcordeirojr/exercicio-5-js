@@ -9,59 +9,59 @@
 // }
 
 
-function somar(numero1, numero2) {
-    return numero1 + numero2
+// function somar(numero1, numero2) {
+//     return numero1 + numero2
 
-}
-let resultadoDasSoma = somar(10, 10)
-console.log(resultadoDasSoma)
-
-
-let resultadoDaSoma = function (numero1, numero2) {
-    return numero1 + numero2
-}
-console.log(resultadoDaSoma(10, 10))
+// }
+// let resultadoDasSoma = somar(10, 10)
+// console.log(resultadoDasSoma)
 
 
-//Arrow Functions
-let outraSoma = (numero1, numero2) => {
-    return numero1 + numero2
-}
-console.log(outraSoma(12, 15))
+// let resultadoDaSoma = function (numero1, numero2) {
+//     return numero1 + numero2
+// }
+// console.log(resultadoDaSoma(10, 10))
 
 
-const incentivarQuester = nomeQuester => console.log("Parabéns " + nomeQuester + ", Você chegou ao módulo de JS intermediário")
-incentivarQuester("Ted") //maneira com menos código 
+// //Arrow Functions
+// let outraSoma = (numero1, numero2) => {
+//     return numero1 + numero2
+// }
+// console.log(outraSoma(12, 15))
 
 
-//Higher order functions 
-function multiplicar(multiplicador) {
-    return function (numero) {
-        return numero * multiplicador
-    }
-}
+// const incentivarQuester = nomeQuester => console.log("Parabéns " + nomeQuester + ", Você chegou ao módulo de JS intermediário")
+// incentivarQuester("Ted") //maneira com menos código 
 
-let dobrar = multiplicar(2)
-let triplicar = multiplicar(3)
-let quadruplicar = multiplicar(4)
 
-console.log(dobrar(6))
-console.log(triplicar(6))
-console.log(quadruplicar(6))
+// //Higher order functions 
+// function multiplicar(multiplicador) {
+//     return function (numero) {
+//         return numero * multiplicador
+//     }
+// }
+
+// let dobrar = multiplicar(2)
+// let triplicar = multiplicar(3)
+// let quadruplicar = multiplicar(4)
+
+// console.log(dobrar(6))
+// console.log(triplicar(6))
+// console.log(quadruplicar(6))
 
 
 
 //Manipulando atributos e estilos de dos elementos de DOM
 
-function marcarRadio(genero) {
-    let radioMasculino = document.getElementById('genero-masculino');
-    let radioFeminino = document.getElementById("genero-feminino");
-    if (genero === "M") {
-        radioMasculino.checked = true;
-    } else if (genero === "F") {
-        radioFeminino.checked = true;
-    }
-}
+// function marcarRadio(genero) {
+//     let radioMasculino = document.getElementById('genero-masculino');
+//     let radioFeminino = document.getElementById("genero-feminino");
+//     if (genero === "M") {
+//         radioMasculino.checked = true;
+//     } else if (genero === "F") {
+//         radioFeminino.checked = true;
+//     }
+// }
 
 //eventos de DOM
 // document
@@ -93,15 +93,27 @@ function marcarRadio(genero) {
     //     quadradoVermelho.classList.add('verde');
     // }
     
-const botao = document.getElementById('botaoMudaCor');
-const quadradoAzul = document.querySelector('.azul');
-const quadradoVermelho = document.querySelector('.vermelho');
+// const botao = document.getElementById('botaoMudaCor');
+// const quadradoAzul = document.querySelector('.azul');
+// const quadradoVermelho = document.querySelector('.vermelho');
 
-botao.addEventListener('click',trocarCor);
+// botao.addEventListener('click',trocarCor);
 
-function trocarCor(){
-    quadradoAzul.classList.remove('azul');
-    quadradoAzul.classList.add('amarelo');
-    quadradoVermelho.classList.remove('vermelho');
-    quadradoVermelho.classList.add('verde');
-}
+// function trocarCor(){
+//     quadradoAzul.classList.remove('azul');
+//     quadradoAzul.classList.add('amarelo');
+//     quadradoVermelho.classList.remove('vermelho');
+//     quadradoVermelho.classList.add('verde');
+// }
+
+const numeral = [65, 44, 12, 4];
+
+numeral.forEach((item) => {
+    console.log(item *10);
+});
+    
+const numeros = [10, 15, 20, 25];
+
+numeros.forEach((index) => {
+    console.log(index /10)
+})
